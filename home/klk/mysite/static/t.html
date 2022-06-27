@@ -1,0 +1,52 @@
+<script src="https://gist.githubusercontent.com/asfaltboy/8aea7435b888164e8563/raw/caf6a507c36285e71f5fc9ab9972cc64bb64285c/css_path.js"></script>
+
+<!-- c/css_path.js' because its MIME type ('text/plain') is not executable, and strict MIME type checking is enabled. -->
+
+<!-- t.html:5 Uncaught ReferenceError: UTILS is not defined    at t.html:5 -->
+<!-- (anonymous) @ t.html:5 -->
+
+
+
+
+
+<script id=script_1>
+
+x=new XMLHttpRequest()
+x.open('get','https://gist.githubusercontent.com/asfaltboy/8aea7435b888164e8563/raw/caf6a507c36285e71f5fc9ab9972cc64bb64285c/css_path.js')
+x.onloadend=function(progressEvent){/*
+	ProgressEvent {isTrusted: true, lengthComputable: true, loaded: 7355, total: 7355, type: "loadend", …}
+	bubbles:false
+	cancelBubble:false
+	cancelable:false
+	composed:false
+	currentTarget:XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+	defaultPrevented:false
+	eventPhase:0
+	isTrusted:true
+	lengthComputable:true
+	loaded:7355
+	path:[]
+	returnValue:true
+	srcElement:XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+	target:XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+	timeStamp:741354.2999999991
+	total:7355
+	type:"loadend"
+	__proto__:ProgressEvent
+	*/
+	eval(
+	 progressEvent.target.responseText
+	)
+	window.U=UTILS
+	//console.log(arguments)
+}
+
+x.send()
+
+alert(43)
+setTimeout(function(){
+	console.log(U.cssPath)
+
+},2222)
+
+</script>
